@@ -1,6 +1,6 @@
 // ignore_for_file: file_names
 
-import 'package:ecc/theme.dart';
+import 'package:ecc/themes/theme.dart';
 import 'package:flutter/material.dart';
 
 class LogInForm extends StatefulWidget {
@@ -15,7 +15,10 @@ class _LoginFormState extends State<LogInForm> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [buildInputForm('Email',false), buildInputForm('Password', true)],
+      children: [
+        buildInputForm('Email', false),
+        buildInputForm('Password', true),
+      ],
     );
   }
 
@@ -38,7 +41,8 @@ class _LoginFormState extends State<LogInForm> {
                           isVisible = !isVisible;
                         });
                       },
-                      icon: Icon(isVisible ? Icons.visibility_off : Icons.visibility),
+                      icon: Icon(
+                          isVisible ? Icons.visibility_off : Icons.visibility),
                     )
                   : null),
         ),

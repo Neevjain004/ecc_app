@@ -1,4 +1,4 @@
-import 'package:ecc/theme.dart';
+import 'package:ecc/themes/theme.dart';
 import 'package:flutter/material.dart';
 
 class PrimaryButton extends StatelessWidget {
