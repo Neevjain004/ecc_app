@@ -22,15 +22,15 @@ class _LoginFormState extends State<LogInForm> {
   }
 
   Padding buildInputForm(String label, bool pass) => Padding(
-        padding: EdgeInsets.symmetric(vertical: 10),
+        padding: const EdgeInsets.symmetric(vertical: 10),
         child: TextFormField(
           obscureText: pass ? isVisible : false,
           decoration: InputDecoration(
               labelText: label,
-              labelStyle: TextStyle(
+              labelStyle: const TextStyle(
                 color: kTextFieldColor,
               ),
-              focusedBorder: UnderlineInputBorder(
+              focusedBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: kPrimaryColor),
               ),
               suffixIcon: pass

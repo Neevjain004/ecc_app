@@ -32,7 +32,7 @@ class _CheckBoxState extends State<CheckBox> {
                 child: _isSelected ? Icon(Icons.check, size:17, color: Colors.green[800],): null ,
               ),
             ),
-            SizedBox(width: 10),
+            const SizedBox(width: 10),
             Text('I Agree to the Terms & Conditions.', style: description)
           ],
         )

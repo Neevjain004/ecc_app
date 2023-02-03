@@ -9,7 +9,7 @@ class Photo extends StatelessWidget {
     return Row(
       children: const [
         Logo(logoImage: Image(
-          image:AssetImage('ecc'),
+          image:AssetImage('images/xaviers_ecc.png'),
         ),
         ),
       ],

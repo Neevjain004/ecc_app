@@ -12,13 +12,13 @@ const kPrimary2Color = Color(0xFF37474F);
 const kDefaultPadding = EdgeInsets.symmetric(horizontal: 30);
 
 TextStyle titleText =
-    TextStyle(color: kPrimaryColor, fontSize: 32, fontWeight: FontWeight.w700);
-TextStyle subTitle = TextStyle(
+    const TextStyle(color: kPrimaryColor, fontSize: 32, fontWeight: FontWeight.w700);
+TextStyle subTitle = const TextStyle(
     color: kSecondaryColor, fontSize: 18, fontWeight: FontWeight.w500);
-TextStyle textButton = TextStyle(
+TextStyle textButton = const TextStyle(
   color: kPrimaryColor,
   fontSize: 18,
   fontWeight: FontWeight.w700,
 );
-TextStyle description = TextStyle
+TextStyle description = const TextStyle
 (color: kPrimary2Color, fontSize: 18, fontWeight: FontWeight.w600);

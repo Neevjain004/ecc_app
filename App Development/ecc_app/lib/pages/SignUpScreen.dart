@@ -38,7 +38,7 @@ class SignUpScreen extends StatelessWidget {
                     width: 5,
                   ),
                   GestureDetector(
-                    onTap:(){  Navigator.push(context, MaterialPageRoute(builder: (context) => Login(),),);
+                    onTap:(){  Navigator.push(context, MaterialPageRoute(builder: (context) => const Login(),),);
                     },
                     child: Text(
                       'Log In',
@@ -60,14 +60,14 @@ class SignUpScreen extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            Padding(
+            const Padding(
               padding: kDefaultPadding,
               child: CheckBox(),
             ),
             const SizedBox(
               height: 50,
             ),
-            Padding(
+            const Padding(
               padding: kDefaultPadding,
               child: PrimaryButton(buttonText: 'Sign Up'),
             ),
