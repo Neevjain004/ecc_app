@@ -7,19 +7,19 @@ class Photo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: [
-        // Logo(logoImage: Image(
-        //   image:AssetImage(''),
-        // ),
-        // ),
+      children: const [
+        Logo(logoImage: Image(
+          image:AssetImage('ecc'),
+        ),
+        ),
       ],
     );
   }
 }
 
 class Logo extends StatelessWidget {
-  //final Image logoImage;
-  const Logo({Key? key, /*required this.logoImage*/}) : super(key: key);
+  final Image logoImage;
+  const Logo({Key? key, required this.logoImage}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context).size;
@@ -29,10 +29,11 @@ class Logo extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: kBlackColor),
+        
       ),
-      // child: Row(children: [
-      //   logoImage
-      // ],)
+      child: Row(children: [
+        logoImage
+      ],)
     );
   }
 }
