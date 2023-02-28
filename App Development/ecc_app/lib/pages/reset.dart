@@ -43,7 +43,7 @@ class ForgotPassword extends StatelessWidget {
                 Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const Login(),),);
+                        builder: (context) => Login(),),);
               },
               child: const PrimaryButton(buttonText: 'Reset'),
             ),
